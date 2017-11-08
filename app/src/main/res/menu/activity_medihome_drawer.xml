@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/icon"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/icon"/>
+        <item
+            android:id="@+id/nav_appoint"
+            android:title="Appoinment"
+            android:icon="@drawable/appion"/>
+
+
+        <item
+            android:id="@+id/nav_Blood"
+            android:icon="@drawable/blood"
+            android:title="Blood Bank" />
+        <item
+            android:id="@+id/nav_Set"
+            android:icon="@drawable/noti2"
+            android:title="settings" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Signout" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

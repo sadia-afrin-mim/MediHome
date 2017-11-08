@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.esha.medihome.OnlineCare"
+    tools:showIn="@layout/app_bar_online_care">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:src="@drawable/medi3"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest Access"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/icon"
+            android:layout_marginLeft="15dp"
+            android:textSize="19dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bmical"
+                android:background="@drawable/bmi2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="29dp"/>
+            <Button android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/dochome"
+                android:background="@drawable/docinfo"
+                android:layout_marginRight="29dp"/>
+            <Button android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/emer"
+                android:background="@drawable/emergency2"
+                android:layout_marginRight="29dp"/>
+            <Button android:layout_width="60dp"
+                android:layout_height="60dp" android:id="@+id/pres"
+                android:background="@drawable/pris"
+                android:onClick="docinfo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/users"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0288D1"
+                android:textSize="10dp"
+                android:text="users"/>
+            <View android:layout_width="1dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="50dp"
+                android:background="#0091EA"/>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/guest2"
+                android:layout_marginLeft="60dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0288D1"
+                android:textSize="10dp"
+                android:text="guests"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

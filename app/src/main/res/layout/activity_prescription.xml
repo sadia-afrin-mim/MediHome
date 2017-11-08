@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.esha.medihome.DoctorInfo.Prescription">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose disease here"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/asthma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asthma" />
+
+    <Button
+        android:id="@+id/cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chicken Pox" />
+
+    <Button
+        android:id="@+id/dengue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dengue" />
+
+    <Button
+        android:id="@+id/diarrohoea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diarrhea" />
+
+    <Button
+        android:id="@+id/diptheria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diptheria" />
+
+    <Button
+        android:id="@+id/influenza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Influenza" />
+
+    <Button
+        android:id="@+id/pneumonia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pneumonia" />
+
+    <Button
+        android:id="@+id/hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High pressure" />
+
+    <Button
+        android:id="@+id/lp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Low Pressure" />
+
+    <Button
+        android:id="@+id/ls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Low sugar" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.esha.medihome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Flash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Medihome"
+            android:label="@string/title_activity_medihome"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".BmiCalculator.bmicalculation" />
+        <activity android:name=".BmiCalculator.bmigraph" />
+        <activity android:name=".LoginAndSignUp.LoginPage" />
+        <activity android:name=".LoginAndSignUp.SignUpPage" />
+        <activity
+            android:name=".chatbot.bot"
+            android:label="@string/title_activity_bot"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Maps.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".DoctorInfo.Doctorlist" />
+        <activity android:name=".DoctorInfo.Prescription" />
+        <activity android:name=".DoctorInfo.emergency" />
+        <activity
+            android:name=".OnlineCare"
+            android:label="@string/title_activity_online_care"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityFromFragments.DonerActivity"
+            android:label="@string/title_activity_doner"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityFromFragments.SeekerActivity"
+            android:label="@string/title_activity_seeker"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DoctorInfo.DoctorTab"
+            android:label="@string/title_activity_docto"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DoctorInfo.DoctorList"
+            android:label="@string/title_activity_doctor_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".mAps.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Map.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Yoga.Cow" />
+
+        <receiver android:name=".Yoga.Alarm" />
+
+        <activity android:name=".Yoga.Chair" />
+        <activity android:name=".Yoga.Lunge" />
+        <activity android:name=".Yoga.Cat" />
+        <activity android:name=".Yoga.Relax" />
+        <activity android:name=".Yoga.Warrior"></activity>
+    </application>
+
+</manifest>
